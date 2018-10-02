@@ -13,7 +13,8 @@ RUN apt-get update \
     libpng-dev \
     libfreetype6-dev \
     libssl-dev \
-    libmcrypt-dev 
+    libmcrypt-dev \
+    git
 
 
 
