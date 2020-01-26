@@ -23,6 +23,7 @@ RUN apk --update --no-cache add wget \
   icu \
   gmp gmp-dev \
   icu-dev \
+  openrc \
   autoconf g++ imagemagick-dev libtool make pcre-dev \
   && rm -rf /var/cache/apk/*
 
