@@ -24,6 +24,7 @@ RUN apk --update --no-cache add wget \
   gmp gmp-dev \
   icu-dev \
   openrc \
+  rsyslog \
   autoconf g++ imagemagick-dev libtool make pcre-dev \
   && rm -rf /var/cache/apk/*
 
