@@ -1,4 +1,4 @@
-FROM php:7.3-fpm-alpine
+FROM php:7.2-fpm-alpine
 MAINTAINER Xavier Casahuga <casahuga@gmail.com>
 RUN apk --update --no-cache add wget \
   curl \
