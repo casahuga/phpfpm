@@ -52,11 +52,10 @@ RUN docker-php-ext-enable memcached \
     && docker-php-ext-install bcmath \
     && docker-php-ext-install pcntl
     
-#RUN docker-php-ext-install mbstring 
+RUN apk add php-mbstring
 
-#RUN    
-    # && docker-php-ext-enable imagick \
-#RUN  docker-php-ext-install tokenizer xml gmp bcmath pcntl
+RUN wget https://get.symfony.com/cli/installer -O - | bash
+
 
 # Copy opcache configration
-#COPY ./docker/php-fpm/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
+COPY ./docker/php-fpm/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
