@@ -59,3 +59,4 @@ RUN wget https://get.symfony.com/cli/installer -O - | bash
 
 # Copy opcache configration
 COPY ./docker/php-fpm/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
+COPY ./docker/php-fpm/www.conf /usr/local/etc/php-fpm.d/www.conf
